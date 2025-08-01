@@ -45,10 +45,10 @@ public class PolynomialSolver {
             Y[i] = yList.get(i);
         }
 
-        // Step 3: Solve A * coeff = Y
+        // Step 3: Solve A * coeff = Y using Gaussian elimination
         BigInteger[] coeffs = solveGaussian(A, Y);
 
-        // ✅ Print only the constant term (a0 = c)
+        // ✅ Print only the constant term (a₀ = c)
         System.out.println("c = " + coeffs[0]);
     }
 
